@@ -17,7 +17,7 @@ namespace WebApplication3.Models
             {
                 Adi = "Sinema1",
                 BaslangicTarihi = DateTime.Now,
-                BitisTarihi = DateTime.Now.AddDays(10),
+                BitisTarihi = DateTime.Now.AddDays(5),
                 EtkinlikTuru = EtkinlikTuru.Sinema,
                 AltTur = "korku"
             });
@@ -26,7 +26,7 @@ namespace WebApplication3.Models
             {
                 Adi = "Sinema2",
                 BaslangicTarihi = DateTime.Now.AddDays(-10),
-                BitisTarihi = DateTime.Now.AddDays(-5),
+                BitisTarihi = DateTime.Now,
                 EtkinlikTuru = EtkinlikTuru.Sinema,
                 AltTur = "korku"
             });
@@ -34,7 +34,7 @@ namespace WebApplication3.Models
             {
                 Adi = "Sinema3",
                 BaslangicTarihi = DateTime.Now,
-                BitisTarihi = DateTime.Now.AddDays(10),
+                BitisTarihi = DateTime.Now.AddDays(3),
                 EtkinlikTuru = EtkinlikTuru.Sinema,
                 AltTur = "dram"
             });
@@ -60,8 +60,8 @@ namespace WebApplication3.Models
             Etkinlikler.Add(new Etkinlik
             {
                 Adi = "Sinema6",
-                BaslangicTarihi = DateTime.Now,
-                BitisTarihi = DateTime.Now.AddDays(10),
+                BaslangicTarihi = DateTime.Now.AddDays(-1),
+                BitisTarihi = DateTime.Now,
                 EtkinlikTuru = EtkinlikTuru.Sinema,
                 AltTur = "komedi"
             });
