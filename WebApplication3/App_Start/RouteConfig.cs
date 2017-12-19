@@ -20,12 +20,6 @@ namespace WebApplication3
             );
 
             routes.MapRoute(
-                name: "SinemaZamani",
-                url: "sinema/tarih/{neZaman}",
-                defaults: new { controller = "Sinema", action = "Tarih" }
-            );
-
-            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

@@ -21,7 +21,7 @@ namespace WebApplication3.Controllers
 
             foreach (var sinema in EtkinlikRepository.ListeyiDoldur())
             {
-                if (sinema.EtkinlikTuru == EtkinlikTuru.Sinema)
+                if ( sinema.EtkinlikTuru == EtkinlikTuru.Sinema)
                 {
                     sinemaListesi.Add(sinema);
                 }
@@ -51,44 +51,6 @@ namespace WebApplication3.Controllers
             }
 
             return View("~/views/_shared/guncel.cshtml", sinemaListesi);
-        }
-
-        public ActionResult tarih(string neZaman)
-        {
-            var sinemaListesi = new List<Etkinlik>();
-
-            foreach (var sinema in EtkinlikRepository.ListeyiDoldur())
-            {
-                if (sinema.EtkinlikTuru == EtkinlikTuru.Sinema)
-                {
-                    if (neZaman == sinemaZamani.bugun.ToString())
-                    {
-                        if (sinema.BitisTarihi.Date == DateTime.Now.Date)
-                        {
-                            sinemaListesi.Add(sinema);
-                            continue;
-                        }
-                    }
-                    else if (neZaman == sinemaZamani.buhafta.ToString())
-                    {
-                        if (sinema.BitisTarihi <= DateTime.Now.AddDays(7))
-                        {
-                            sinemaListesi.Add(sinema);
-                            continue;
-                        }
-                    }
-                    else if (neZaman == sinemaZamani.buay.ToString())
-                    {
-                        if (sinema.BitisTarihi <= DateTime.Now.AddDays(30))
-                        {
-                            sinemaListesi.Add(sinema);
-                            continue;
-                        }
-                    }
-                }
-            }
-
-            return View("~/views/_shared/tarih.cshtml", sinemaListesi);
         }
     }
 }
