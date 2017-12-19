@@ -11,6 +11,5 @@ namespace WebApplication3.Models
         public EtkinlikTuru EtkinlikTuru { get; set; }
         public DateTime BaslangicTarihi { get; set; }
         public DateTime BitisTarihi { get; set; }
-        public string AltTur { get; set; }
     }
 }
