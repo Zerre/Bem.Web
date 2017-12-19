@@ -14,6 +14,18 @@ namespace WebApplication3
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Sinema",
+                url: "sinema/tur/{tur}",
+                defaults: new { controller = "Sinema", action = "Tur" }
+            );
+
+            routes.MapRoute(
+                name: "SinemaNeZaman",
+                url: "sinema/nezaman/{action}",
+                defaults: new { controller = "Sinema" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
