@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+    int indice = 10;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Layout</title>
+    <style>
+        body{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <ul>
+            @for (int i = 0; i < indice; i++)
+            {
+            <li>@i</li>
+            }
+        </ul>
+    </header>
+   @RenderBody()
+    <footer>Footer</footer>
+</body>
+</html>
