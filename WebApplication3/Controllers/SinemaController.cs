@@ -27,29 +27,6 @@ namespace WebApplication3.Controllers
                 }
             }
 
-            //return View();
-            //return View(sinemaListesi);
-            return View("~/views/_shared/guncel.cshtml", sinemaListesi);
-        }
-
-        public ActionResult Tur(string tur)
-        {
-            var sinemaListesi = new List<Etkinlik>();
-
-            foreach (var sinema in EtkinlikRepository.ListeyiDoldur())
-            {
-                if (sinema.AltTur == tur && sinema.EtkinlikTuru == EtkinlikTuru.Sinema)
-                {
-
-                    //if (!hepsimi && sinema.BitisTarihi<DateTime.Now)
-                    //{
-                    //    continue;
-                    //}
-
-                    sinemaListesi.Add(sinema);
-                }
-            }
-
             return View("~/views/_shared/guncel.cshtml", sinemaListesi);
         }
 
