@@ -69,7 +69,7 @@ namespace WebApplication3.Models
             Etkinlikler.Add(new Etkinlik
             {
                 Adi = "Sinema7",
-                BaslangicTarihi = DateTime.Now.AddDays(2),
+                BaslangicTarihi = DateTime.Now.AddDays(-2),
                 BitisTarihi = DateTime.Now.AddDays(10),
                 EtkinlikTuru = EtkinlikTuru.Sinema,
                 AltTur = "komedi"

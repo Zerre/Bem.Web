@@ -21,7 +21,7 @@ namespace WebApplication3.Controllers
 
             foreach (var sinema in EtkinlikRepository.ListeyiDoldur())
             {
-                if ( sinema.EtkinlikTuru == EtkinlikTuru.Sinema)
+                if (sinema.EtkinlikTuru == EtkinlikTuru.Sinema)
                 {
                     sinemaListesi.Add(sinema);
                 }
@@ -53,7 +53,7 @@ namespace WebApplication3.Controllers
 
             foreach (var sinema in EtkinlikRepository.ListeyiDoldur())
             {
-                if (sinema.EtkinlikTuru == EtkinlikTuru.Sinema && sinema.BaslangicTarihi<= DateTime.Now && sinema.BitisTarihi>= DateTime.Now)
+                if (sinema.EtkinlikTuru == EtkinlikTuru.Sinema && sinema.BaslangicTarihi <= DateTime.Now && sinema.BitisTarihi >= DateTime.Now)
                 {
                     sinemaListesi.Add(sinema);
                 }
@@ -85,6 +85,24 @@ namespace WebApplication3.Controllers
                 if (sinema.EtkinlikTuru == EtkinlikTuru.Sinema && sinema.BaslangicTarihi <= DateTime.Now && sinema.BitisTarihi.Year == DateTime.Now.Year && sinema.BitisTarihi.Month == DateTime.Now.Month)
                 {
                     sinemaListesi.Add(sinema);
+                }
+            }
+            return View("~/views/_shared/guncel.cshtml", sinemaListesi);
+        }
+
+        public ActionResult BuTarih(DateTime baslangic, DateTime bitis)
+        {
+            var sinemaListesi = new List<Etkinlik>();
+
+            foreach (var sinema in EtkinlikRepository.ListeyiDoldur())
+            {
+                if (sinema.EtkinlikTuru == EtkinlikTuru.Sinema)
+                {
+
+                    if (sinema.BaslangicTarihi >= baslangic && sinema.BaslangicTarihi <= bitis || sinema.BitisTarihi >= baslangic && sinema.BitisTarihi <= bitis)
+                    {
+                        sinemaListesi.Add(sinema);
+                    }
                 }
             }
             return View("~/views/_shared/guncel.cshtml", sinemaListesi);

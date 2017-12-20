@@ -3,8 +3,11 @@
     <!-- Bootstrap Core CSS -->
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="~/Content/BabaSayfa.css" rel="stylesheet" />
-    <link href="~/Content/indexStyle.css" rel="stylesheet" />   
+
+    <link href="~/Content/indexStyle.css" rel="stylesheet" />
+    @*<link href="~/Content/BabaSayfa.css" rel="stylesheet" />*@  
+    @RenderSection("link", false);
+
     <!-- jQuery -->
     <script src="~/Content/js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -21,11 +24,12 @@
     <div id="Arkaplan">
         <div id="site">
             <div id="baslik">
-                <h1 id="LogoH1">ASTROMATİK</h1>
+                @*<h1 id="LogoH1">ASTROMATİK</h1>
                 <div id="LogoDiv">
                     <img id="SolLogo" />
                     <img id="SagLogo" />
-                </div>
+                </div>*@
+                @RenderSection("animasyonLogo", false)
                 <nav>
                     <ol>
                         <li class="burclar">
