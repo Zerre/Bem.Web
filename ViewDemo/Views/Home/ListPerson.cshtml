@@ -1,0 +1,8 @@
+﻿@model List<ViewDemo.Models.Person>
+@{
+    ViewBag.Title = "ListPerson";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>ListPerson</h2>
+@Html.Partial("~/Views/Home/ListPersonPartial.cshtml", Model)

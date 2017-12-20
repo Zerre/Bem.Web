@@ -1,0 +1,219 @@
+
+#Arkaplan {
+    background-image: url(../img/Arkaplan.jpg);
+    background-size: cover;
+}
+
+#site {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+#LogoH1 {
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 900;
+    margin-left: 500px;
+    color: antiquewhite;
+    position: absolute;
+    animation: Goster 19s;
+    /*animation-timing-function: linear;*/
+}
+
+#Logo {
+    height: 150px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    animation:Getir 3s;
+    /*animation-direction: alternate;*/
+    /*animation-timing-function: linear;*/
+}
+
+#LogoTarih {
+    float: right;
+    font-family: 'Comic Sans MS';
+    color: antiquewhite;
+    font-size: 30px;
+    position: relative;
+    animation:Goster 5s;
+    text-align:center;
+}
+
+nav {
+    width: 1280px;
+    left: 50px;
+    position: relative;
+    display: block;
+}
+
+.burclar {
+    display: inline-block;
+    margin-left: 0.3%;
+    text-align: center;
+}
+
+    .burclar > img {
+        max-width: 90px;
+        max-height: 100px;
+        background-size: contain;
+    }
+
+    .burclar > a {
+        color: burlywood;
+        text-decoration: none;
+        font-size: large;
+        font-weight: bolder;
+        margin: 5px;
+    }
+
+#ozellik {
+    position: relative;
+}
+
+    #ozellik > img {
+        position: absolute;
+        margin: 20px 550px;
+        width: 300px;
+        height: 250px;
+        opacity: 0.4;
+    }
+
+    #ozellik > h1 {
+        color: bisque;
+        text-align: center;
+    }
+
+    #ozellik > p {
+        color: aquamarine;
+        display: inline-block;
+        text-align: justify;
+        font-size: 25px;
+    }
+
+hr {
+    width: 1150px;
+    margin: 10px auto 10px auto;
+    clear: both;
+}
+
+#Uyumluluk {
+    text-align: center;
+}
+
+ #Uyumluluk > h1 {
+        color: bisque;
+        text-align: center;
+    }
+#Uyumlu {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
+}
+
+#Uyumsuz {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
+}
+
+#Uyumlu > span {
+    background-color: green;
+    width: 130px;
+    height: 70px;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    margin-right: 75px;
+}
+
+#Uyumsuz > span {
+    background-color: firebrick;
+    width: 130px;
+    height: 70px;
+    font-size: 70px;
+    text-align: center;
+    margin-left: 150px;
+}
+
+#Uyumlu > ul > li > img {
+    float: right;
+    margin-top: 25px;
+}
+
+#Uyumsuz > ul > li > img {
+    float: left;
+    margin-top: 23px;
+}
+
+#Uyumlu > ul > li > a, a:active, a:visited {
+    text-decoration: none;
+    font-size: x-large;
+    color: springgreen;
+}
+
+#Uyumsuz > ul > li > a, a:active, a:visited {
+    text-decoration: none;
+    font-size: x-large;
+    color: chocolate;
+}
+
+#Uyumlu > ul > li {
+    list-style-type: none;
+}
+
+#Uyumsuz > ul > li {
+    list-style-type: none;
+}
+
+#Uyumlu > ul > li:hover {
+    background-color: forestgreen;
+}
+
+#Uyumsuz > ul > li:hover {
+    background-color: darkred;
+}
+
+#Uyumlu > ul > li > p {
+    color: antiquewhite;
+    font-size: larger;
+}
+
+#Uyumsuz > ul > li > p {
+    color: antiquewhite;
+    font-size: larger;
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+    font: 15px Comic Sans MS;
+    color: sienna;
+}
+
+@keyframes Goster {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Getir {
+    from {
+        left:1360px;
+    }
+
+    to {
+        left:0;
+    }
+}

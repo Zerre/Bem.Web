@@ -1,0 +1,441 @@
+﻿#Arkaplan {
+    background-image: url(../img/Arkaplan.jpg);
+    background-size: cover;
+}
+
+#site {
+    width: 1360px;
+    margin: 0 auto;
+    /*background-color: sienna;*/
+}
+
+#LogoDiv {
+    max-height: 250px;
+    width: 1360px;
+    position: relative;
+}
+
+#SolLogo {
+    height: 150px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(../img/Logo.png);
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    animation: gelGelGumuleGelSol 10s;
+    /*animation-direction: alternate;*/
+    animation-timing-function: linear;
+    /*animation: ileri-geri 10s infinite;  
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-timing-function: linear;*/
+}
+
+#LogoH1 {
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 900;
+    margin-left: 300px;
+    color: antiquewhite;
+    position: absolute;
+    animation: yukari 5s;
+    animation-timing-function: linear;
+}
+
+#SagLogo {
+    height: 150px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/Logo.png);
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    animation: gelGelGumuleGelSag 10s;
+    /*animation-direction: alternate;*/
+    animation-timing-function: linear;
+    float: right;
+}
+
+#Logo:hover {
+    animation-play-state: paused;
+    background-image: url(../img/logo.png) !important;
+}
+
+nav {
+    width: 1280px;
+    left: 50px;
+    position: relative;
+    display: block;
+}
+
+.burclar {
+    display: inline-block;
+    margin-left: 0.3%;
+    text-align: center;
+}
+
+    .burclar > img {
+        max-width: 90px;
+        max-height: 100px;
+        background-size: contain;
+    }
+
+    .burclar > a {
+        color: burlywood;
+        text-decoration: none;
+        font-size: large;
+        font-weight: bolder;
+        margin: 5px;
+    }
+
+hr {
+    width: 1150px;
+    margin: 10px auto 10px auto;
+}
+
+#Fal > ul li {
+    height: 100px;
+    width: 250px;
+    color: chocolate;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 30px 0 30px;
+}
+
+#Fal > ul > li > a {
+    font-size: xx-large;
+    text-decoration: none;
+    font-weight: 700;
+    color: #dc8a4f;
+    width: 300px;
+}
+
+.burcKutusu {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: large;
+    color: antiquewhite;
+    text-align: center;
+    overflow: hidden;
+}
+
+    .burcKutusu > a {
+        text-decoration: none;
+        color: burlywood;
+    }
+
+h1, h2 {
+    color: bisque;
+}
+
+#gunlukBurc {
+    text-align: center;
+}
+
+.burcKutusu > a > img {
+    height: 122px;
+}
+
+#yukselen {
+    display: inline-block;
+    width: 75%;
+    position: relative;
+    text-align: center;
+}
+
+#YukselenHesaplama {
+    text-align: center;
+    float: right;
+    position: absolute;
+    right: -370px;
+    top: 250px;
+    border-left: 3px dotted burlywood;
+    line-height: 30px;
+}
+
+    #YukselenHesaplama label {
+        width: 200px;
+        font-size: large;
+        color: sienna;
+    }
+
+    #YukselenHesaplama select {
+        text-align: center;
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+        color: burlywood;
+        background-color: sienna;
+    }
+
+    #YukselenHesaplama button {
+        float: none;
+    }
+
+footer {
+    height:50px;
+    text-align: center;
+    font: 15px Comic Sans MS;
+    color: sienna;
+}
+
+/*#Fal > ul > li > a:hover {
+        background-color:brown;
+    }*/
+
+@keyframes yukari {
+    from {
+        opacity: 0;
+        margin-left: 700px;
+        top: 500px;
+        font-size: 0;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 300px;
+        top: 0px;
+        font-size: 100px;
+    }
+}
+
+@keyframes gelGelGumuleGelSol {
+    0% {
+        position: absolute !important;
+        left: 605px;
+        top: 500px;
+    }
+
+    25% {
+        position: absolute !important;
+        left: 605px;
+        top: 0;
+    }
+
+    37% {
+        position: relative !important;
+        left: 0;
+        top: 0;
+    }
+
+    41% {
+        position: relative !important;
+        left: 0;
+        top: 0;
+        background-image: url('../img/logo.png');
+    }
+
+    45% {
+        background-image: url('../img/koc.png');
+    }
+
+    50% {
+        background-image: url('../img/boga.png');
+    }
+
+    55% {
+        background-image: url('../img/ikizler.png');
+    }
+
+    60% {
+        background-image: url('../img/yengec.png');
+    }
+
+    65% {
+        background-image: url('../img/aslan.png');
+    }
+
+    70% {
+        background-image: url('../img/basak.png');
+    }
+
+    70% {
+        background-image: url('../img/terazi.png');
+    }
+
+    80% {
+        background-image: url('../img/akrep.png');
+    }
+
+    85% {
+        background-image: url('../img/yay.png');
+    }
+
+    90% {
+        background-image: url('../img/oglak.png');
+    }
+
+    95% {
+        background-image: url('../img/kova.png');
+    }
+
+    100% {
+        background-image: url('../img/balik.png');
+    }
+}
+
+@keyframes gelGelGumuleGelSag {
+    0% {
+        position: absolute !important;
+        right: 605px;
+        top: 500px;
+    }
+
+    25% {
+        position: absolute !important;
+        right: 605px;
+        top: 0;
+    }
+
+    37% {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    41% {
+        position: relative;
+        right: 0;
+        top: 0;
+        background-image: url('../img/logo.png');
+    }
+
+    45% {
+        background-image: url('../img/koc.png');
+    }
+
+    50% {
+        background-image: url('../img/boga.png');
+    }
+
+    55% {
+        background-image: url('../img/ikizler.png');
+    }
+
+    60% {
+        background-image: url('../img/yengec.png');
+    }
+
+    65% {
+        background-image: url('../img/aslan.png');
+    }
+
+    70% {
+        background-image: url('../img/basak.png');
+    }
+
+    70% {
+        background-image: url('../img/terazi.png');
+    }
+
+    80% {
+        background-image: url('../img/akrep.png');
+    }
+
+    85% {
+        background-image: url('../img/yay.png');
+    }
+
+    90% {
+        background-image: url('../img/oglak.png');
+    }
+
+    95% {
+        background-image: url('../img/kova.png');
+    }
+
+    100% {
+        background-image: url('../img/balik.png');
+    }
+}
+
+/*@keyframes ilerle {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 1250px;
+            }
+        }*/
+
+/*@keyframes deigistir {
+    0% {
+        left: 0px;
+    }
+
+    8.33% {
+        background-image: url('../img/koc.png');
+        left: 50px;
+    }
+
+    16.66% {
+        background-image: url('../img/boga.png');
+        left: 156px;
+    }
+
+    24.99% {
+        background-image: url('../img/ikizler.png');
+        left: 262px;
+    }
+
+    33.32% {
+        background-image: url('../img/yengec.png');
+        left: 368px;
+    }
+
+    41.65% {
+        background-image: url('../img/aslan.png');
+        left: 474px;
+    }
+
+    49.98% {
+        background-image: url('../img/basak.png');
+        left: 580px;
+    }
+
+    58.31% {
+        background-image: url('../img/terazi.png');
+        left: 686px;
+    }
+
+    66.64% {
+        background-image: url('../img/akrep.png');
+        left: 792px;
+    }
+
+    74.97% {
+        background-image: url('../img/yay.png');
+        left: 898px;
+    }
+
+    83.3% {
+        background-image: url('../img/oglak.png');
+        left: 1004px;
+    }
+
+    91.63% {
+        background-image: url('../img/kova.png');
+        left: 1110px;
+    }
+
+    99.96% {
+        background-image: url('../img/balik.png');
+        left: 1216px;
+    }
+
+    100% {
+        background-image: url('../img/logo.png');
+        left: 1323px;
+    }
+}*/

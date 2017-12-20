@@ -1,0 +1,111 @@
+﻿<html>
+<head>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/Content/BabaSayfa.css" rel="stylesheet" />
+    <link href="~/Content/indexStyle.css" rel="stylesheet" />   
+    <!-- jQuery -->
+    <script src="~/Content/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () { $(".oku").hover(function () { $(this).css("height", "150px"); }, function () { $(this).css("height", "auto"); }); });
+        $(document).ready(function () { $(".oku").hover(function () { $(this).css("overflow-y", "scroll"); }, function () { $(this).css("overflow-y", "hidden"); }); });
+    </script>
+    <!--<script>
+        $(document).ready(function () { $(".deg").hover(function () { $(this).css("overflow", "scroll"); }, function () { $(this).css("overflow", "hidden"); }); });
+    </script>-->
+</head>
+<body>
+    <div id="Arkaplan">
+        <div id="site">
+            <div id="baslik">
+                <h1 id="LogoH1">ASTROMATİK</h1>
+                <div id="LogoDiv">
+                    <img id="SolLogo" />
+                    <img id="SagLogo" />
+                </div>
+                <nav>
+                    <ol>
+                        <li class="burclar">
+                            <img src="~/img/koc.png" alt="" />
+                            <br />
+                            <a href=" ">Koç</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/boga.png " alt="" />
+                            <br />
+                            <a href=" ">Boğa</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/ikizler.png " alt="" />
+                            <br />
+                            <a href=" ">İkizler</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/yengec.png" alt="" />
+                            <br />
+                            <a href=" ">Yengeç</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/aslan.png" alt="" />
+                            <br />
+                            <a href=" ">Aslan</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/basak.png" alt="" />
+                            <br />
+                            <a href=" ">Başak</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/terazi.png" alt="" />
+                            <br />
+                            <a href=" ">Terazi</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/akrep.png" alt="" />
+                            <br />
+                            @Html.ActionLink("Akrep","Details","Home")
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/yay.png" alt="" />
+                            <br />
+                            <a href=" ">Yay</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/oglak.png" alt="" />
+                            <br />
+                            <a href=" ">Oğlak</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/kova.png" alt="" />
+                            <br />
+                            <a href=" ">Kova</a>
+                        </li>
+                        <li class="burclar">
+                            <img src="~/img/balik.png" alt="" />
+                            <br />
+                            <a href=" ">Balık</a>
+                        </li>
+                    </ol>
+                </nav>
+                <hr />
+                <div id="Fal">
+                    <ul>
+                        <li><a class="btn btn-danger" href="gunluk-burc.html">Günlük Burç</a></li>
+                        <li><a class="btn btn-warning" href="aylik-burc.html">Aylık Burç</a></li>
+                        <li><a class="btn btn-info" href="yillik-burc.html">Yıllık Burç</a></li>
+                        <li><a class="btn btn-success" href="yukselen-burc.html">Yükselen Burç</a></li>
+                    </ul>
+                </div>
+                <hr />
+            </div>
+
+            @RenderBody()
+
+            <footer><span class="glyphicon glyphicon-copyright-mark"></span>Made in Cumali</footer>
+        </div>
+    </div>
+</body>
+</html>
